@@ -1,0 +1,8 @@
+digraph {
+		мамка[color=red];
+		мамка -> b[style=dotted];
+		b -> c;
+		c -> d;
+		d -> мамка;
+		мамка->c;
+	}

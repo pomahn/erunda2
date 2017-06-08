@@ -1,0 +1,22 @@
+char * convert (char * dst, const char * src)
+{
+    char string[100];
+    int length = strlen (src);
+    int ostatok = 4 - length % 4;
+    
+    for (int k = 0; k < ostatok;)
+    {
+        string[k] = '0';
+    }
+    
+    strcpy (&string[ostatok], src);
+    
+    for (int i = 0; i <= strlen (string); )
+    {
+        int j = 0;
+        dst[j] = 
+        
+    
+    
+    return dst;
+}

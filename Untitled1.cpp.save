@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <io.h>
+#include <ctype.h>
+#include <assert.h>
+
+struct Point {
+    int x;
+    int y;
+};
+struct Rect {
+    struct Point lt; // left top
+    struct Point rb; // right bottom
+};
+
+int main()
+{
+    struct Rect rect, a = {{2, 4}, {7, 1}};
+    rect = transform(a);
+    printf("%d %d %d %d\n", rect.lt.x, rect.lt.y, rect.rb.x, rect.rb.y);
+    return 0;
+}
+
+struct Rect transform (struct Rect r) 
+{
+    struct Rect g;
+    
+    
+
+
